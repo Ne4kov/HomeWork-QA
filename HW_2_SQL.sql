@@ -270,7 +270,7 @@ create table salarys_roles(id serial primary key,
 							foreign key (role_id)
 									references roles(id));
 									
-insert into salary_roles (role_id, salary_id )
+insert into salarys_roles(role_id, salary_id)
 values (1, 1),
 		(2,2),
 		(3, 3),
@@ -285,11 +285,6 @@ values (1, 1),
 		(12, 12),
 		(13, 13),
 		(14, 14),
-		(15, 15),
-		(16, 15),
-		(17, 15),
-		(18, 15),
-		(19, 15),
-		(20, 15);
+		(15, 15);
 	
-select * from salary_roles
+select * from salarys_roles
